@@ -5,7 +5,7 @@ export default function Footer() {
       className="bg-black divide-y divide-slate-700 text-white select-none"
     >
       <div className="w-full">
-        <div className="container grid grid-cols-5 py-4">
+        <div className="container grid grid-cols-3 xl:grid-cols-5 py-4">
           <div></div>
           <div>
             <span className="text-lg uppercase font-semibold">
@@ -86,6 +86,8 @@ export default function Footer() {
                 <div
                   key={index}
                   className="text-xs  grid place-content-center border rounded-sm p-2 hover:bg-white/20"
+                  data-title={item}
+                  data-id={item}
                 >
                   {item}
                 </div>

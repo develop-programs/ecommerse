@@ -26,7 +26,7 @@ export default function Categories() {
         ].map((item, index) => (
           <CarouselItem
             key={index}
-            className="md:basis-1/2 lg:basis-1/4 xl:basis-1/6"
+            className="md:basis-1/4 lg:basis-1/5 xl:basis-1/6"
           >
             <div className="size-32 aspect-square grid place-content-center select-none">
               <img

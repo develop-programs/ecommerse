@@ -8,8 +8,8 @@ import Autoplay from "embla-carousel-autoplay";
 export default function HomeBanner() {
   return (
     <div className="w-full">
-      <div className="w-full flex gap-2 justify-stretch">
-        <div className="flex-1">
+      <div className="w-full grid grid-cols-6 gap-2">
+        <div className="col-span-4">
           <Carousel
             opts={{
               loop: true,
@@ -42,16 +42,18 @@ export default function HomeBanner() {
             </CarouselContent>
           </Carousel>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="col-span-2 grid gap-2">
           {["./images/Offer3.webp", "./images/flipbuds_banner.png"].map(
             (item: string | undefined, index: number) => (
               <img
                 key={index}
                 src={item}
                 alt="banners"
-                className="w-full h-full"
+                className=""
                 width={1280}
                 height={720}
+                loading="lazy"
+                decoding="async"
               />
             )
           )}

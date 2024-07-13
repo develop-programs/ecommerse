@@ -5,7 +5,7 @@ export default function BlackFridayBanner() {
   const [show, setShow] = React.useState<boolean>(true);
   return (
     <div className={cn("bg-black py-4", show ? "block" : "hidden")}>
-      <div className="container flex justify-between">
+      <div className="container flex justify-between px-20 lg:px-32 xl:px-20 2xl:p-0">
         <div className="flex gap-3 items-center">
           <div className="bg-yellow-400 px-5 py-1.5 -rotate-6">
             <span className="text-lg font-bold">Black</span>
